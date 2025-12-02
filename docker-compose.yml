@@ -1,0 +1,7 @@
+services:
+  sab-web-chat:
+    build: .
+    container_name: sab-web-chat
+    ports:
+      - "6750:6750"
+    restart: unless-stopped

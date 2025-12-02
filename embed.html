@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website - With Embedded Chat</title>
+  <style>
+    /* Your website styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Chat widget container - centered on page */
+    #sab-chat-container {
+      max-width: 900px;
+      height: 600px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  
+  <!-- Load chat widget CSS from your VPS -->
+  <link rel="stylesheet" href="http://YOUR_VPS_IP:8080/chat-widget.css">
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+  </header>
+  
+  <main>
+    <h2>Chat with our AI Assistant</h2>
+    <p>Have questions? Our AI is here to help!</p>
+    
+    <!-- Chat widget will load here -->
+    <div 
+      id="sab-chat-container"
+      data-title="AI Assistant"
+      data-welcome-title="How can I help you today?"
+      data-welcome-message="Ask me anything and I'll do my best to help!"
+      data-placeholder="Message AI Assistant..."
+    ></div>
+  </main>
+
+  <!-- Load chat widget JS from your VPS -->
+  <script src="http://YOUR_VPS_IP:8080/chat-widget.js"></script>
+</body>
+</html>
+

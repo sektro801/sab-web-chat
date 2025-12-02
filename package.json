@@ -1,0 +1,12 @@
+{
+  "name": "sab-web-chat",
+  "version": "1.0.0",
+  "description": "ChatGPT-style web chat widget",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
+
